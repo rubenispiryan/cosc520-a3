@@ -11,7 +11,10 @@ This report compares two vertex-cover algorithms and two greedy graph-coloring o
 \maketitle
 
 \section{Introduction}
-Minimum vertex cover asks for the smallest set of vertices that meets every edge. Graph coloring asks for the fewest colors such that adjacent vertices have different colors. Both optimization problems are hard in general, so simple algorithms are useful when an exact answer is too costly. Assignment 3 specifies the basic edge-pair cover, a randomized one-endpoint version, and basic greedy coloring \cite{assignment}. I chose Largest First as the second coloring order because it uses a simple graph property, degree, and its extra work is easy to measure. I compare each pair on the same graph and consider both time and solution quality.
+Minimum vertex cover asks for the smallest set of vertices that meets every edge. Graph coloring asks for the fewest colors such that adjacent vertices have different colors. Both optimization problems are hard in general, so simple algorithms are useful when an exact answer is too costly. Assignment 3 specifies the basic edge-pair cover, a randomized one-endpoint version, and basic greedy coloring \cite{assignment}. I compare each pair on the same graph and consider both time and solution quality.
+
+% Confirm that this paragraph reflects your own reasons before submission.
+I chose Largest First because I wanted to compare different ways to order vertices for greedy coloring. Basic input order gave me a simple baseline, and Largest First interested me because it uses degree to put more connected vertices first. I wanted to see whether these differences mattered in the measured times and numbers of colors.
 
 \section{Algorithms and Complexity}
 Let $V$ be the number of vertices, $E$ the number of undirected edges, and $\Delta$ the maximum degree. The code stores an edge list and adjacency lists, using $O(V+E)$ space. DIMACS parsing and synthetic graph generation are outside the timed algorithm calls. The algorithms use zero-based vertex IDs internally.
@@ -112,7 +115,7 @@ Figure~\ref{fig:colorruntime} shows an increasing cost for both methods. Largest
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=.65\linewidth]{final_quality_cover.pdf}
+\includegraphics[width=.58\linewidth]{final_quality_cover.pdf}
 \Description{Both cover methods return sizes near the known minimum on four FRB MIS instances.}
 \caption{Cover size divided by the known minimum on FRB MIS graphs. A ratio of 1 is optimal.}
 \label{fig:coverquality}
@@ -120,7 +123,7 @@ Figure~\ref{fig:colorruntime} shows an increasing cost for both methods. Largest
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=.65\linewidth]{final_quality_coloring.pdf}
+\includegraphics[width=.58\linewidth]{final_quality_coloring.pdf}
 \Description{Basic coloring matches the known optimum while Largest First uses more colors on four FRB CLQ instances.}
 \caption{Colors used divided by the known chromatic number on FRB CLQ graphs. A ratio of 1 is optimal.}
 \label{fig:colorquality}
@@ -133,8 +136,11 @@ Only one instance from each FRB family is included. The synthetic graphs have ex
 
 The implementation and included data are intended for \url{https://github.com/rubenispiryan/cosc520-a3}. The original FRB dataset is at \url{https://rb-bench.github.io/benchmarks/hidden-opt-graph.html}. The repository README gives commands for setup, tests, the demo, benchmarks, plots, and data generation. Unit tests cover validity, the basic cover's bound on small graphs, ordering, parser errors, and deterministic input generation.
 
-\section{Use of GenAI}
-I selected the comparison, Largest First ordering, and benchmark scope. Codex generated the Python algorithm implementations, tests, scripts, plots, and a draft of this report. Codex also checked the generated outputs against the assignment and the saved measurements.
+\section*{Use of Generative AI}
+\begin{itemize}
+\item \textbf{OpenAI Codex} assisted with graph generation, benchmark and plotting scripts, unit tests, documentation, README, and report drafting.
+\item \textbf{The author} selected Largest First and the graph datasets, wrote the final vertex-cover and graph-coloring implementations, directed and reviewed the work, and takes responsibility for the personal selection reasons in Section 1.
+\end{itemize}
 
 \begin{thebibliography}{4}
 \bibitem{assignment}
