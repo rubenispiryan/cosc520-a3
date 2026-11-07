@@ -1,0 +1,264 @@
+{
+  "profile": "full",
+  "trials": 5,
+  "base_seed": 520,
+  "timer": "time.perf_counter_ns; graph creation and validation excluded",
+  "python": "3.14.8",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "datasets": [
+    {
+      "dataset": "frb30-15-1.mis",
+      "problem": "cover",
+      "source": "data/frb/frb30-15-1.mis",
+      "sha256": "4d8a10f37a8f7236e0cf5487f9942e2bec830ce3665fef93ae36b89edf778841",
+      "vertices": 450,
+      "edges": 17827,
+      "known_optimum": 420
+    },
+    {
+      "dataset": "frb30-15-1.clq",
+      "problem": "coloring",
+      "source": "data/frb/frb30-15-1.clq",
+      "sha256": "30a4568f3f150a29984b6d8f8c80ba9428506285e11dac8c5d69636f4a102f5c",
+      "vertices": 450,
+      "edges": 83198,
+      "known_optimum": 30
+    },
+    {
+      "dataset": "frb35-17-1.mis",
+      "problem": "cover",
+      "source": "data/frb/frb35-17-1.mis",
+      "sha256": "7a4e9842d16a0392601375662b5e1a497ef63e24320729566909732d58d18ddc",
+      "vertices": 595,
+      "edges": 27856,
+      "known_optimum": 560
+    },
+    {
+      "dataset": "frb35-17-1.clq",
+      "problem": "coloring",
+      "source": "data/frb/frb35-17-1.clq",
+      "sha256": "b993ccb2eaa8ca74963e6ccbb4d7cdf06c80a7722bbc5ab9c46fd5cf39657757",
+      "vertices": 595,
+      "edges": 148859,
+      "known_optimum": 35
+    },
+    {
+      "dataset": "frb40-19-1.mis",
+      "problem": "cover",
+      "source": "data/frb/frb40-19-1.mis",
+      "sha256": "a5db943e8a5d0f39254d2dc0c3ca130e69145b5ebb513a34fdcd19ff51400099",
+      "vertices": 760,
+      "edges": 41314,
+      "known_optimum": 720
+    },
+    {
+      "dataset": "frb40-19-1.clq",
+      "problem": "coloring",
+      "source": "data/frb/frb40-19-1.clq",
+      "sha256": "e643ee7456721f79605f2c8311835d206eb9b5e68c7d6a361809c837e67d18ef",
+      "vertices": 760,
+      "edges": 247106,
+      "known_optimum": 40
+    },
+    {
+      "dataset": "frb45-21-1.mis",
+      "problem": "cover",
+      "source": "data/frb/frb45-21-1.mis",
+      "sha256": "727568393ee26d7dcca66da56afa9ea14110112eafba0b36fe8716f5fb69f208",
+      "vertices": 945,
+      "edges": 59186,
+      "known_optimum": 900
+    },
+    {
+      "dataset": "frb45-21-1.clq",
+      "problem": "coloring",
+      "source": "data/frb/frb45-21-1.clq",
+      "sha256": "37c6586886cdbfd1ee55f42f9931949a08d1ee92346035abdbaa8367bbce8b90",
+      "vertices": 945,
+      "edges": 386854,
+      "known_optimum": 45
+    },
+    {
+      "dataset": "sparse_500",
+      "problem": "cover",
+      "source": "seed=1020; edges=4V",
+      "sha256": "",
+      "vertices": 500,
+      "edges": 2000,
+      "known_optimum": null
+    },
+    {
+      "dataset": "sparse_500",
+      "problem": "coloring",
+      "source": "seed=1020; edges=4V",
+      "sha256": "",
+      "vertices": 500,
+      "edges": 2000,
+      "known_optimum": null
+    },
+    {
+      "dataset": "sparse_1000",
+      "problem": "cover",
+      "source": "seed=1520; edges=4V",
+      "sha256": "",
+      "vertices": 1000,
+      "edges": 4000,
+      "known_optimum": null
+    },
+    {
+      "dataset": "sparse_1000",
+      "problem": "coloring",
+      "source": "seed=1520; edges=4V",
+      "sha256": "",
+      "vertices": 1000,
+      "edges": 4000,
+      "known_optimum": null
+    },
+    {
+      "dataset": "sparse_2500",
+      "problem": "cover",
+      "source": "seed=3020; edges=4V",
+      "sha256": "",
+      "vertices": 2500,
+      "edges": 10000,
+      "known_optimum": null
+    },
+    {
+      "dataset": "sparse_2500",
+      "problem": "coloring",
+      "source": "seed=3020; edges=4V",
+      "sha256": "",
+      "vertices": 2500,
+      "edges": 10000,
+      "known_optimum": null
+    },
+    {
+      "dataset": "sparse_5000",
+      "problem": "cover",
+      "source": "seed=5520; edges=4V",
+      "sha256": "",
+      "vertices": 5000,
+      "edges": 20000,
+      "known_optimum": null
+    },
+    {
+      "dataset": "sparse_5000",
+      "problem": "coloring",
+      "source": "seed=5520; edges=4V",
+      "sha256": "",
+      "vertices": 5000,
+      "edges": 20000,
+      "known_optimum": null
+    },
+    {
+      "dataset": "sparse_10000",
+      "problem": "cover",
+      "source": "seed=10520; edges=4V",
+      "sha256": "",
+      "vertices": 10000,
+      "edges": 40000,
+      "known_optimum": null
+    },
+    {
+      "dataset": "sparse_10000",
+      "problem": "coloring",
+      "source": "seed=10520; edges=4V",
+      "sha256": "",
+      "vertices": 10000,
+      "edges": 40000,
+      "known_optimum": null
+    },
+    {
+      "dataset": "sparse_20000",
+      "problem": "cover",
+      "source": "seed=20520; edges=4V",
+      "sha256": "",
+      "vertices": 20000,
+      "edges": 80000,
+      "known_optimum": null
+    },
+    {
+      "dataset": "sparse_20000",
+      "problem": "coloring",
+      "source": "seed=20520; edges=4V",
+      "sha256": "",
+      "vertices": 20000,
+      "edges": 80000,
+      "known_optimum": null
+    },
+    {
+      "dataset": "dense_200",
+      "problem": "cover",
+      "source": "seed=920; density\u22480.1",
+      "sha256": "",
+      "vertices": 200,
+      "edges": 1990,
+      "known_optimum": null
+    },
+    {
+      "dataset": "dense_200",
+      "problem": "coloring",
+      "source": "seed=920; density\u22480.1",
+      "sha256": "",
+      "vertices": 200,
+      "edges": 1990,
+      "known_optimum": null
+    },
+    {
+      "dataset": "dense_400",
+      "problem": "cover",
+      "source": "seed=1320; density\u22480.1",
+      "sha256": "",
+      "vertices": 400,
+      "edges": 7980,
+      "known_optimum": null
+    },
+    {
+      "dataset": "dense_400",
+      "problem": "coloring",
+      "source": "seed=1320; density\u22480.1",
+      "sha256": "",
+      "vertices": 400,
+      "edges": 7980,
+      "known_optimum": null
+    },
+    {
+      "dataset": "dense_800",
+      "problem": "cover",
+      "source": "seed=2120; density\u22480.1",
+      "sha256": "",
+      "vertices": 800,
+      "edges": 31960,
+      "known_optimum": null
+    },
+    {
+      "dataset": "dense_800",
+      "problem": "coloring",
+      "source": "seed=2120; density\u22480.1",
+      "sha256": "",
+      "vertices": 800,
+      "edges": 31960,
+      "known_optimum": null
+    },
+    {
+      "dataset": "dense_1200",
+      "problem": "cover",
+      "source": "seed=2920; density\u22480.1",
+      "sha256": "",
+      "vertices": 1200,
+      "edges": 71940,
+      "known_optimum": null
+    },
+    {
+      "dataset": "dense_1200",
+      "problem": "coloring",
+      "source": "seed=2920; density\u22480.1",
+      "sha256": "",
+      "vertices": 1200,
+      "edges": 71940,
+      "known_optimum": null
+    }
+  ],
+  "frb_source": "https://rb-bench.github.io/benchmarks/hidden-opt-graph.html"
+}
